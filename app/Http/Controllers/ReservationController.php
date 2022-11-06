@@ -7,8 +7,9 @@ use App\Models\reservation;
 
 class ReservationController extends Controller
 {
-    public function index(Reservation $reservation)
+    public function reception(Reservation $reservation)
     {
-    return $reservation->get();
+       return view('reservation/customer_reservation')->with(['reservation' => $reservation->get()]);  
     }
 }
+?>

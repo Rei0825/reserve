@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\
+use App\Http\Controllers\ReservationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +14,4 @@ use App\Http\Controllers\
 |
 */
 
-Route::get('/', function () {
-    return view('reservations/index');
-});
+Route::get('/', [ReservationController::class, 'reception']);
