@@ -14,4 +14,5 @@ use App\Http\Controllers\ReservationController;
 |
 */
 
-Route::get('/', [ReservationController::class, 'reception']);
+Route::get('/reception', [ReservationController::class, 'reception']);
+Route::get('/information', [ReservationController::class, 'information']);

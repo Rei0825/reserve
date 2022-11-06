@@ -11,5 +11,10 @@ class ReservationController extends Controller
     {
        return view('reservation/customer_reservation')->with(['reservation' => $reservation->get()]);  
     }
+    
+    public function information(Reservation $reservation)
+    {
+       return view('reservation/personal_information')->with(['reservation' => $reservation->get()]);  
+    }
 }
 ?>
