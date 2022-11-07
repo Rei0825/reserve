@@ -17,3 +17,4 @@ use App\Http\Controllers\ReservationController;
 Route::get('/reception', [ReservationController::class, 'reception']);
 Route::get('/information', [ReservationController::class, 'information']);
 Route::get('/confirmation', [ReservationController::class, 'confirmation']);
+Route::get('/completion', [ReservationController::class, 'completion']);
