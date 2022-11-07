@@ -28,5 +28,11 @@ class ReservationController extends Controller
     }
     
     
+    public function shop_id(Reservation $reservation)
+    {
+       return view('reservation/shop_id')->with(['reservation' => $reservation->get()]);  
+    }
+    
+    
 }
 ?>
